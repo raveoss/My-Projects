@@ -1,0 +1,97 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+    overflow: hidden;
+}
+/* header */
+header{
+    background-color: #eec132;
+}
+#HeaderBody {
+    height: 60px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eec132;
+}
+#logo img {
+    width: 50px;
+}
+ul li {
+    display: inline;
+}
+ul li a {
+    text-transform: uppercase;
+    font-family: Impact;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+ul li a:hover {
+    color: blue;
+}
+/* Druga sekcija */
+#BackgroundPhoto {
+    background-image: url(../img/pozadina.jpg);
+    display: flex;
+    background-size: cover;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    text-transform: uppercase;
+    word-spacing: 50px;
+    font-family: Impact;
+    letter-spacing: 10px;
+}
+/* Galerija */
+#GalleryBody {
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    align-items: center;
+}
+#GalleryBody img {
+    height: 200px;
+    width: 250px;
+    border: 1px solid black;
+}
+/* Mapa */
+#Map {
+    margin: -5px;
+    width: 100%;
+}
+/* copy */
+section p {
+    text-align: center;
+    background-color: #eec132;
+}
+/* za mobilne uredjaje */
+@media only screen and (max-width: 600px) {
+    #HeaderBody {
+        width: 600px;
+    }
+    #BackgroundPhoto {
+        width: 100%;
+        padding-left: 0px;
+    }
+    #GalleryBody {
+        display: block;
+        height: auto;    
+    }
+     #GalleryBody img {
+        display: block;
+        flex-direction: column;
+    }
+}
+
+
+
